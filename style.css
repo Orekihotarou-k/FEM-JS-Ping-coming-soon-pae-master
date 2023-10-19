@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    min-width: 100%;
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+header{
+    position: absolute;
+    top: 55px;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.container{
+    width: 70%;
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 8rem;
+}
+
+.container h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+}
+
+.container h1 span{
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+.container p{
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 2rem;
+}
+
+.container img{
+    width: 55%;
+    margin: 5rem 0;
+}
+
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form input{
+    width: 35%;
+    padding: 1.1rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+}
+
+form input.error{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+form input:focus{
+    outline: none;
+    font-size: 16px;
+    color: hsl(223, 100%, 88%);
+}
+
+form input:focus:invalid{
+    outline: none;
+}
+
+::placeholder{
+    font-size: 16px;
+    color: hsl(223, 100%, 88%);
+    opacity: 1;
+}
+
+form button{
+    width: 20%;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(223, 87%, 63%);
+    font-weight: 20px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ button:hover{
+    background-color: hsl(223, 87%, 73%);
+}
+
+form button:active{
+    background-color: hsl(223, 87%, 63%);
+}
+
+form .error-msg{
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+    top: 70px;
+    left: 225px;
+    display: none;
+}
+
+.copyright{
+    margin-bottom: 2rem;
+}
+
+.copyright ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.copyright ul li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+}
+
+.copyright ul li i{
+    width: 45px;
+    height: 45px;
+    padding: 0.7rem;
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    transition: 0.5s;
+}
+
+.copyright ul li i:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+.copyright p{
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+}
+
+
+
+/* mediaquerry */
+
+@media screen and (max-width: 768px) {
+    header{
+        transform: translate(60%, 50%);
+    }
+    
+    header img{
+        width: 80%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .container p{
+        font-size: 16px;
+    }
+
+    .container img{
+        width: 80%;
+        margin: 3rem 0;
+    }
+
+    form{
+        display: block;
+    }
+
+    form input{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    form button{
+        width: 80%;
+    }
+
+    form .error-msg{
+        position: initial;
+        font-size: 14px;
+}
+}
