@@ -80,6 +80,7 @@ form input:focus:invalid{
     font-size: 16px;
     color: hsl(223, 100%, 88%);
     opacity: 1;
+    padding-left: 5px;
 }
 
 form button{
@@ -108,7 +109,7 @@ form .error-msg{
     font-style: italic;
     position: absolute;
     top: 70px;
-    left: 300px;
+    left: 325px;
     display: none;
 }
 
